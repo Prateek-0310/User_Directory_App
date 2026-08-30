@@ -26,6 +26,10 @@ The latest Android release APK is available here:
 
 ## Screenshots
 
+App preview:
+
+![User Directory App Preview](assets/images(3).png)
+
 This app includes:
 
 - user directory list
