@@ -15,7 +15,7 @@ A Flutter mobile application that displays a list of users fetched from the JSON
 
 The latest Android release APK is available here:
 
-- [Download APK](https://drive.google.com/file/d/1SAX-T4-npj7cCy5UK3xnGeelIKK3r4Ky/view?usp=sharing)
+- [Download APK](https://drive.google.com/file/d/1HjdlCyqXAoqO4lkAvrwFdv3EhcJx2qT5/view?usp=sharing)
 
 ### Install on Android
 
