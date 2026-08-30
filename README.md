@@ -1,17 +1,94 @@
-# flutter_application_1
+# User Directory App
 
-A new Flutter project.
+A Flutter mobile application that displays a list of users fetched from the JSONPlaceholder API and presents their details in an elegant, expandable directory layout.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Fetches live user data from JSONPlaceholder
+- Displays user cards with names, emails, usernames, and addresses
+- Expandable details for each user
+- Light and dark theme toggle
+- KRS quick links via floating action button
+- Android APK build ready for release
 
-A few resources to get you started if this is your first Flutter project:
+## APK Download
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+The latest Android release APK is available here:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Download APK](build/app/outputs/apk/release/app-release.apk)
+
+### Install on Android
+
+1. Download the APK file from the link above.
+2. On your Android device, enable installation from unknown sources if prompted.
+3. Open the APK file and follow the installation steps.
+4. Launch the app after installation.
+
+## Screenshots
+
+This app includes:
+
+- user directory list
+- expandable profile cards
+- theme switch support
+- quick access to KRS social links
+
+## Tech Stack
+
+- Flutter
+- Dart
+- Provider for state management
+- HTTP client for API calls
+- URL launcher for external links
+
+## Project Structure
+
+```text
+lib/
+  main.dart
+  home_screen.dart
+  splash_screen.dart
+  theme_provider.dart
+  user_model.dart
+build/
+  app/
+    outputs/
+      apk/
+        release/
+          app-release.apk
+```
+
+## Run Locally
+
+### Prerequisites
+
+- Flutter SDK installed
+- Android Studio or VS Code configured for Flutter
+- An Android emulator or physical Android device
+
+### Commands
+
+```bash
+flutter pub get
+flutter run
+```
+
+### Build release APK
+
+```bash
+flutter build apk --release
+```
+
+The APK will be generated under:
+
+```text
+build/app/outputs/apk/release/app-release.apk
+```
+
+## Author
+
+Prateek Raj
+
+## License
+
+This project is for educational and personal use.
