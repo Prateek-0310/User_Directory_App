@@ -28,8 +28,10 @@ The latest Android release APK is available here:
 
 App preview:
 
-<p align="center">
-  <img src="assets/images(3).png" alt="User Directory App Preview" width="420" />
+<p align="left">
+  <img src="assets/images(3).png" alt="User Directory App Preview" width="160" />
+  <img src="assets/images(4).png" alt="User Directory App Preview" width="160" />
+  <img src="assets/images(5).png" alt="User Directory App Preview" width="160" />
 </p>
 
 This app includes:
