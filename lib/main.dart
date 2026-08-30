@@ -4,9 +4,14 @@ import 'theme_provider.dart';
 import 'splash_screen.dart';
 
 void main() {
+  // Initialize theme provider with system brightness before running the app
+  final themeProvider = ThemeProvider();
+
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => ThemeProvider(),
+    ChangeNotifierProvider<ThemeProvider>.value(
+      value: themeProvider,
       child: const MainApp(),
     ),
   );
@@ -19,10 +24,13 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProvider>(context);
 
-    // Read system brightness via MediaQuery to handle inverted initialization
+    // Initialize theme on first build with system brightness
+    // Using context is safe here as it's called during normal widget build
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      final brightness = MediaQuery.of(context).platformBrightness;
-      themeProvider.initTheme(brightness);
+      if (!themeProvider.isInitialized) {
+        final brightness = MediaQuery.of(context).platformBrightness;
+        themeProvider.initTheme(brightness);
+      }
     });
 
     return MaterialApp(
